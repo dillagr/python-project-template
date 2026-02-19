@@ -10,7 +10,7 @@ from rich.traceback import install
 from dotenv import dotenv_values
 
 # save runtime logs to file
-logger.add("runtime.log", level="DEBUG")
+logger.add("runtime.log", level="DEBUG", rotation="9MB")
 
 # rich.traceback
 install(show_locals=True)
